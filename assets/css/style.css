@@ -1,5 +1,11 @@
 :root {
-    
+    --primary: #ccdad1;
+    --secondary: #0384fc;
+}
+
+.container {
+    padding: none;
+    margin: none;
 }
 
 .jumbotron {
@@ -10,20 +16,17 @@
  padding: 3px 0px;
 }
 
-.card-header {
-    font-size: 1.7rem;
-    padding-bottom: none;
-}
-
-.form-input {
-    margin: 5px 0;
-    font-size: 1.5rem;
-}
-
 .btn {
-    padding: 6px 6px;
+    background-color: var(--secondary);
 }
 
 .card-header {
     font-family: Arial, Helvetica, sans-serif;
+} 
+.day-weather {
+    background-color: #0384fc;
+    margin: 5px;
+}
+.hide {
+    display: none;
 }
