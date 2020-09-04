@@ -30,3 +30,11 @@
 .hide {
     display: none;
 }
+
+.search-hist {
+    text-align: center;
+}
+
+.forecast-dis {
+    display: block;
+}
