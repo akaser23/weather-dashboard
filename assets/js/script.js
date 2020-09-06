@@ -42,7 +42,7 @@ var getCityWeather = function (city) {
                     var lat = data.coord.lat;
                     var lon = data.coord.lon;
                     
-                    fetch("http://api.openweathermap.org/data/2.5/uvi?appid=c0acf9a2d1becd72a92787658f4ca1e7&lat="
+                    fetch("https://api.openweathermap.org/data/2.5/uvi?appid=c0acf9a2d1becd72a92787658f4ca1e7&lat="
                     + lat 
                     + "&lon="
                     +lon)
@@ -111,6 +111,7 @@ var searchHistoryWeather = function(ele) {
     var cityName = ele.innerHTML;
 
     getCityWeather(cityName);
+    getFiveDay(cityName);
 };
 
 var displayWeather = function (weather) {
