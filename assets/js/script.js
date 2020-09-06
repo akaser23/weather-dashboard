@@ -24,6 +24,8 @@ var humidFive = document.querySelector("#humid5");
 var uvIndexEl = document.querySelector("#uv");
 var citySearch = [];
 
+// var loadedHist = localStorage.getItem()
+
 var getCityWeather = function (city) {
     //format the github api url
     var apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=c0acf9a2d1becd72a92787658f4ca1e7"
@@ -101,6 +103,8 @@ var searchHistory = function (cityName) {
     histEl.setAttribute("onclick", "searchHistoryWeather(this);");
 
     cityHistoryEl.prepend(histEl);
+
+    localStorage.setItem("City", JSON.stringify(citySearch));
 };
 
 var searchHistoryWeather = function(ele) {
